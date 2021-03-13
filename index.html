@@ -1,275 +1,629 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="theme-color" content="#4285f4">
-
-        <meta name="msapplication-navbutton-color" content="#4285f4">
-        <title>Andika Leonardo</title>
-        <meta name="keywords" content="Andika Leonardo">
-        <meta name='description' content='I am 郑昊天 Haotian Zheng (a.k.a JustZht / Justin Fincher on the Internet). I do some code & design stuff.'>
-        <meta property="og:url" content="https://fincher.im">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="郑昊天 (a.k.a Justin Fincher)">
-        <meta name='og:description' content='I am 郑昊天 Haotian Zheng (a.k.a JustZht / Justin Fincher on the Internet). I do some code & design stuff.'>
-        <meta property="og:site_name" content="Justin Fincher a.k.a JustZht.">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:creator" content="@justzht">
-        <meta name="twitter:url" content="https://fincher.im">
-        <meta name="twitter:title" content="郑昊天 (a.k.a Justin Fincher)">
-        <meta name="twitter:description" content="I am 郑昊天 Haotian Zheng (a.k.a JustZht / Justin Fincher on the Internet). I do some code & design stuff.">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
-
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    font-weight:300;
-    line-height: 36px;
-    color: #737373;
-    background-color: white;
-    margin: 10px 13px 10px 13px;
-}
-table {
-    margin: 10px 0 15px 0;
-    border-collapse: collapse;
-}
-td,th { 
-    border: 1px solid #ddd;
-    padding: 3px 10px;
-}
-th {
-    padding: 5px 10px;  
-}
-
-a {
-    color: #0069d6;
-}
-a:hover {
-    color: #0050a3;
-    text-decoration: none;
-}
-a img {
-    border: none;
-}
-p {
-    margin-bottom: 20px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #404040;
-    line-height: 36px;
-    font-weight:900;
-}
-h1 {
-    font-family: 'Lato', sans-serif;
-    line-height: normal;
-    margin-bottom: 80px;
-    font-size: 80px;
-}
-h2 {
-    font-size: 40px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-    -webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Holacracy</title><style>
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
     body {
-        width: 854px;
-        margin:10px auto;
+        margin: 0;
+        padding: 0;
     }
-}
-@media print {
-    body,code,pre code,h1,h2,h3,h4,h5,h6 {
-        color: black;
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(55, 53, 47);
+        }
     }
-    table, pre {
-        page-break-inside: avoid;
-    }
-}
-@media (prefers-color-scheme: dark) {
-  /* Dark theme styles go here */
+    
     body {
-        color: #eee;
-        background: #121212;
+        line-height: 1.5;
+        white-space: pre-wrap;
     }
-    a {
-        color: #18fcb7;
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
     }
-    a:hover {
-        color: #e5fffb;
-        text-decoration: none;
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
     }
+    
     h1,
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #e6e6e6;
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
     }
-}
-
-@media (prefers-color-scheme: light) {
-  /* Light theme styles go here */
-}
-</style>
-<br>
-<title>郑昊天 (a.k.a Justin Fincher)</title>
-</head>
-<body>
-
-<h2>HI THERE</h2>
-<p>I am 郑昊天 Haotian Zheng (a.k.a JustZht / Justin Fincher on the Internet). Born in 97, I now do some code & design stuff.</p>
-<h2>HANDY STUFF</h2>
-<p>
-Code : Objective-C, C#, Java, Swift, JS, Ruby<br />
-UI : Sketch, PS<br />
-CGI : MODO, Adobe AE, Cinema 4D<br />
-Game : Unity
-</p>
-<h2>LINKS</h2>
-<p>
-<a href="https://www.justzht.com/" target="_blank">Blog</a> ·
-<a href="https://github.com/JustinFincher" target="_blank">GitHub</a> ·
-<a href="https://dribbble.com/JustZht" target="_blank">Dribbble</a> ·
-<a href="https://www.linkedin.com/in/justzht" target="_blank">Linkedin</a> ·
-<a href="https://twitter.com/JustZht" target="_blank">Twitter</a> ·
-<a href="https://www.artstation.com/artist/justzht" target="_blank">ArtStation</a>
-</p>
-<h2>JOBS</h2>
-<p>
-rct studio<sup> 2018.09-2019.01</sup><br />
-<del>Tencent<sup> Dropped out at last minute</sup></del><br />
-Baidu<sup> 2017.03-2017.10</sup><br />
-RavenTech<sup> 2016.04-2016.10</sup><br />
-Quadera<sup> 2014.07-2015.03</sup>
-</p>
-<h2>STUDIOS</h2>
-<p>
-Fin GameWorks<sup> Since 2015.12</sup><br />
-NodeX<sup>2015.02 - 2018.06</sup><br />
-</p>
-<h2>JOURNEYS</h2>
-<p>
-Carnegie Mellon University<sup> coming 2021</sup><br />
-Central South University<sup> 2014-2019</sup><br />
-Hefei No.1 Senior High School<sup> 2011-2014</sup>
-</p>
-<h2>WORKS</h2>
-<a href="http://portfolio.justzht.com" target="_blank">See my Portfolio.</a>
-</p>
-<h2>CV</h2>
-<a href="Haotian Zheng.pdf" target="_blank">PDF Ver.</a> | <a href="CV.html" target="_blank"><del>Online Ver. (outdated)</del></a>
-</p>
-<h2>CURRENTLY DOING</h2>
-<p>
-Writing <a target="_blank" href="https://assetstore.unity.com/packages/tools/integration/unilwp-droid-unity-live-wallpaper-for-android-167193">UniLWP.Droid</a> and UniLWP.Mac, maybe even a Wallpaper Engine for Unity later<br>
-Also preparing for spring 21 enrollment and summer internship, <b>drop me a message</b> if your team needs a US-based Unity/iOS/Android intern for summer 21 :-)
-</p>
-<h2>ETA?</h2>
-<a href="https://justinfincher.github.io/Status/" target="_blank"><del>See project status.(outdated)</del></a>
-</p>
-<h2>CONTACT</h2>
-<a href="mailto:justzht+sayhi@gmail.com" target="_blank">My Gmail</a><br>
-(Or other places, as long as I am using the ID <b>JustZht</b>)
-<h6>Last updated: 2020/11/18 00:58 GMT+8</pre>
-</body>
-</html>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-28787397-6', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        text-indent: -1.7em;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+    
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+    
+    .highlight-default {
+    }
+    .highlight-gray {
+        color: rgb(155,154,151);
+    }
+    .highlight-brown {
+        color: rgb(100,71,58);
+    }
+    .highlight-orange {
+        color: rgb(217,115,13);
+    }
+    .highlight-yellow {
+        color: rgb(223,171,1);
+    }
+    .highlight-teal {
+        color: rgb(15,123,108);
+    }
+    .highlight-blue {
+        color: rgb(11,110,153);
+    }
+    .highlight-purple {
+        color: rgb(105,64,165);
+    }
+    .highlight-pink {
+        color: rgb(173,26,114);
+    }
+    .highlight-red {
+        color: rgb(224,62,62);
+    }
+    .highlight-gray_background {
+        background: rgb(235,236,237);
+    }
+    .highlight-brown_background {
+        background: rgb(233,229,227);
+    }
+    .highlight-orange_background {
+        background: rgb(250,235,221);
+    }
+    .highlight-yellow_background {
+        background: rgb(251,243,219);
+    }
+    .highlight-teal_background {
+        background: rgb(221,237,234);
+    }
+    .highlight-blue_background {
+        background: rgb(221,235,241);
+    }
+    .highlight-purple_background {
+        background: rgb(234,228,242);
+    }
+    .highlight-pink_background {
+        background: rgb(244,223,235);
+    }
+    .highlight-red_background {
+        background: rgb(251,228,228);
+    }
+    .block-color-default {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray {
+        color: rgba(55, 53, 47, 0.6);
+        fill: rgba(55, 53, 47, 0.6);
+    }
+    .block-color-brown {
+        color: rgb(100,71,58);
+        fill: rgb(100,71,58);
+    }
+    .block-color-orange {
+        color: rgb(217,115,13);
+        fill: rgb(217,115,13);
+    }
+    .block-color-yellow {
+        color: rgb(223,171,1);
+        fill: rgb(223,171,1);
+    }
+    .block-color-teal {
+        color: rgb(15,123,108);
+        fill: rgb(15,123,108);
+    }
+    .block-color-blue {
+        color: rgb(11,110,153);
+        fill: rgb(11,110,153);
+    }
+    .block-color-purple {
+        color: rgb(105,64,165);
+        fill: rgb(105,64,165);
+    }
+    .block-color-pink {
+        color: rgb(173,26,114);
+        fill: rgb(173,26,114);
+    }
+    .block-color-red {
+        color: rgb(224,62,62);
+        fill: rgb(224,62,62);
+    }
+    .block-color-gray_background {
+        background: rgb(235,236,237);
+    }
+    .block-color-brown_background {
+        background: rgb(233,229,227);
+    }
+    .block-color-orange_background {
+        background: rgb(250,235,221);
+    }
+    .block-color-yellow_background {
+        background: rgb(251,243,219);
+    }
+    .block-color-teal_background {
+        background: rgb(221,237,234);
+    }
+    .block-color-blue_background {
+        background: rgb(221,235,241);
+    }
+    .block-color-purple_background {
+        background: rgb(234,228,242);
+    }
+    .block-color-pink_background {
+        background: rgb(244,223,235);
+    }
+    .block-color-red_background {
+        background: rgb(251,228,228);
+    }
+    .select-value-color-default { background-color: rgba(206,205,202,0.5); }
+    .select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+    .select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+    .select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+    .select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+    .select-value-color-green { background-color: rgba(0,135,107,0.2); }
+    .select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+    .select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+    .select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+    .select-value-color-red { background-color: rgba(255,0,26,0.2); }
+    
+    .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+        
+    </style></head><body><article id="3e68ee2a-4210-42b7-bc43-71681a4a5ae5" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="Holacracy%20419352b98ffc4aef8320d915f83f7951/icon_Orange.png"/></div><h1 class="page-title">Holacracy</h1></header><div class="page-body"><h2 id="143c30f7-0aca-4a0f-be55-bcc49824e180" class="">What is Holacracy ?</h2><p id="7d838855-17f5-40a4-aca0-7ad095b84470" class="">Holacracy adalah teknologi sosial atau sistem tata kelola organisasi di mana otoritas dan pengambilan keputusan didistribusikan ke seluruh tim yang mengatur dirinya sendiri dan bukan ditempatkan dalam hierarki manajemen. Secara teori, holacracy memberdayakan orang untuk membuat keputusan yang berarti dan mendorong perubahan.
+    
+    Alih-alih struktur manajemen tradisional di mana pertanyaan harus diajukan dari bawah ke atas dan keputusan terbalik, organisasi yang mengadopsi holakrasi memberdayakan tim yang gesit untuk membuat dan menerapkan keputusan.</p><figure id="419352b9-8ffc-4aef-8320-d915f83f7951" class="image"><a href="Holacracy%20419352b98ffc4aef8320d915f83f7951/Untitled.png"><img style="width:672px" src="Holacracy%20419352b98ffc4aef8320d915f83f7951/Untitled.png"/></a></figure><h3 id="0e4bbaea-bada-410a-b26b-6e8784eadcf4" class="">Model organisasi mandiri biasanya memiliki Tiga Karakteristik:</h3><h3 id="f0eb5cfb-23c5-489d-8497-9391eb334d40" class="">Tim adalah strukturnya</h3><p id="f953e46f-f2ed-4415-8375-d001fd09a2d8" class="">Dalam holacracy, ada &quot;lingkaran&quot; atau banyak perusahaan menyebutnya &quot;tim&quot;. Apa pun namanya, komponen dasar ini bukanlah, individu, dan bukan unit, departemen, atau divisi, tetapi mereka adalah blok bangunan organisasi yang penting. Peran individu ditentukan dan ditetapkan untuk menyelesaikan pekerjaan. Seperti dalam organisasi hierarki yang lebih tradisional, mungkin ada tim yang berbeda untuk proyek atau fungsi yang berbeda seperti keuangan, teknologi, penjualan. Tetapi perusahaan yang mengelola sendiri memiliki lebih banyak lagi. Setelah Zappos menerapkan holacracy, 150 unit departemen berkembang menjadi lebih dari 500 lingkaran.</p><h3 id="19d78c43-dfa6-4306-ae4a-63404c599d7f" class="">Tim merancang dan mengatur dirinya sendiri</h3><p id="64102df8-502f-468e-94de-9c035550da2a" class="">Meskipun perusahaan yang mengatur dirinya sendiri mencoba menghindari hierarki tradisional, tim adalah bagian dari struktur yang lebih besar, yang sebenarnya dapat mereka bentuk dan sempurnakan. Organisasi Holacratic meminta setiap orang menandatangani konstitusi — sebuah dokumen yang menguraikan aturan yang membuat lingkaran dibuat, diubah, dan dihapus. Jadi, lingkaran tidak hanya mengatur dirinya sendiri; dalam pedoman tersebut, mereka juga merancang dan mengatur diri mereka sendiri. Konstitusi tidak mendikte dengan tepat bagaimana orang harus melakukan tugasnya. Ini menjelaskan secara luas bagaimana lingkaran harus dibuat dan dioperasikan: bagaimana mereka harus menetapkan peran, batasan apa yang harus dimiliki peran, dan bagaimana lingkaran harus berinteraksi satu sama lain.</p><h3 id="43621d6b-3966-4aac-b8e6-6f68211966f8" class="">Kepemimpinan terus berubah</h3><p id="d6d9198f-8d42-49aa-908e-9d96bf29baa1" class="">Dalam organisasi swakelola, kepemimpinan didistribusikan di antara peran, bukan individu. Orang biasanya memegang banyak peran, di banyak tim. Tanggung jawab kepemimpinan terus berubah saat pekerjaan berubah dan saat tim membuat dan menentukan peran baru. Teknologi sangat penting untuk menjaga semua perubahan ini tetap lurus. Informasi dapat diakses oleh siapa saja di organisasi dan komitmen setiap individu dapat dilihat oleh semua orang di perusahaan. Seharusnya, transparansi memungkinkan integrasi lintas tim.</p><p id="e647dce5-b8a4-416d-826c-c0b8675a2a2d" class="">Meskipun ini menjadi kata yang ramai, holakrasi tidak diadopsi dengan cepat. Organisasi yang telah mencoba menerapkannya mengalami banyak sekali masalah, termasuk peningkatan pergantian karyawan dan penurunan produktivitas mengingat pertemuan tanpa akhir. Sementara beberapa melihatnya dengan penuh minat, yang lain hanya mengatakan itu tidak berhasil. Minggu depan kita akan mempelajari beberapa masalah yang muncul ketika organisasi mencoba menerapkan holacracy.</p></div></article></body></html>
